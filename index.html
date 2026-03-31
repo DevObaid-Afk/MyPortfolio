@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obaid — Backend Engineer & Entrepreneur</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">OBD</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-grid-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          <span>Mumbai, India · Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="title-line">
+            <span class="title-hi">Hi, I'm</span>
+            <span class="title-name"> Obaid</span>
+          </span>
+          <span class="title-line title-line-2">
+            <span class="title-role typed-text" id="typedText"></span>
+            <span class="cursor-blink">|</span>
+          </span>
+        </h1>
+
+        <p class="hero-sub">
+          Building scalable systems and chasing financial freedom —<br />
+          one line of code at a time.
+        </p>
+
+        <div class="hero-code-snippet">
+          <div class="snippet-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="snippet-filename">obaid.config.js</span>
+          </div>
+          <pre
+            class="snippet-body"
+          ><code><span class="kw">const</span> obaid = {
+  age: <span class="num">17</span>,
+  location: <span class="str">"Mumbai, India"</span>,
+  goal: <span class="str">"Millionaire by mindset, engineer by craft"</span>,
+  stack: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>, <span class="str">"Node.js"</span>],
+  status: <span class="str">"Building..."</span>
+};</code></pre>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-scroll-hint">
+          <div class="scroll-line"></div>
+          <span>Scroll</span>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">17</span>
+          <span class="stat-label">Years Old</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Ambition Level</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section-container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>01 / About</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left">
+            <h2 class="section-title">
+              Not your average<br />
+              <span class="accent-green">17-year-old</span>.
+            </h2>
+            <div class="about-text">
+              <p>
+                While most people my age are scrolling through reels, I'm
+                reverse-engineering how the internet works. I started with HTML
+                and CSS — not because someone told me to — but because I needed
+                to understand how things are built.
+              </p>
+              <p>
+                Right now, I'm deep in JavaScript and making my move towards
+                backend development with
+                <span class="highlight">Node.js, Express, and MongoDB</span>. I
+                don't just want to build pretty UIs — I want to architect the
+                systems that power them.
+              </p>
+              <p>
+                My goal isn't vague. It's precise: build impactful tech
+                products, achieve financial freedom, and prove that where you
+                start doesn't determine where you end up.
+              </p>
+            </div>
+
+            <div class="about-badges">
+              <span class="badge">Self-Taught</span>
+              <span class="badge">Backend-Focused</span>
+              <span class="badge">Entrepreneur Mindset</span>
+              <span class="badge">Mumbai</span>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">~/obaid/profile.sh</span>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line">
+                  <span class="prompt">$</span> <span class="cmd">whoami</span>
+                </div>
+                <div class="terminal-output">obaid — 17, Mumbai</div>
+                <div class="terminal-line">
+                  <span class="prompt">$</span>
+                  <span class="cmd">cat current_stack.txt</span>
+                </div>
+                <div class="terminal-output green">HTML · CSS · JavaScript</div>
+                <div class="terminal-line">
+                  <span class="prompt">$</span>
+                  <span class="cmd">cat learning.txt</span>
+                </div>
+                <div class="terminal-output gold">
+                  Node.js · Express · MongoDB
+                </div>
+                <div class="terminal-line">
+                  <span class="prompt">$</span>
+                  <span class="cmd">echo $GOAL</span>
+                </div>
+                <div class="terminal-output">"Build. Scale. Own."</div>
+                <div class="terminal-line">
+                  <span class="prompt">$</span> <span class="cmd">uptime</span>
+                </div>
+                <div class="terminal-output">6205 days — still compiling</div>
+                <div class="terminal-line blink-line">
+                  <span class="prompt">$</span>
+                  <span class="cursor-blink">█</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-progress-section">
+              <h4 class="progress-title">Current Proficiency</h4>
+              <div class="progress-bars">
+                <div class="progress-item">
+                  <div class="progress-label">
+                    <span>HTML & CSS</span><span class="progress-pct">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div
+                      class="progress-fill"
+                      data-width="85"
+                      style="--target: 85%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-label">
+                    <span>JavaScript</span><span class="progress-pct">65%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div
+                      class="progress-fill"
+                      data-width="65"
+                      style="--target: 65%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-label">
+                    <span>Node.js</span><span class="progress-pct">30%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div
+                      class="progress-fill"
+                      data-width="30"
+                      style="--target: 30%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-label">
+                    <span>MongoDB</span><span class="progress-pct">20%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div
+                      class="progress-fill"
+                      data-width="20"
+                      style="--target: 20%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="section-container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>02 / Skills</span>
+        </div>
+        <h2 class="section-title">
+          My <span class="accent-green">Arsenal</span>
+        </h2>
+        <p class="section-sub">
+          Technologies I wield — and the ones I'm forging.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-level="proficient">
+            <div class="skill-card-glow"></div>
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M8 6l3.2 36L24 46l12.8-4L40 6H8z" fill="#E44D26" />
+                <path d="M24 42.4V9.6H38.4L36 39.2 24 42.4z" fill="#F16529" />
+                <path
+                  d="M24 20.8H17.6l-.4-5.6H24v-5.6H11.2l1.2 13.6H24V20.8zM24 30.4l-6.4-1.6-.4-5.2H11.6l.8 9.2 11.6 3.2V30.4z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M24 20.8v2.4h5.6l-.8 7.2-4.8 1.2v5.6l11.6-3.2.8-9.2-1.2-4H24z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <span class="skill-level">Proficient</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-level="proficient">
+            <div class="skill-card-glow"></div>
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M8 6l3.2 36L24 46l12.8-4L40 6H8z" fill="#1572B6" />
+                <path d="M24 42.4V9.6H38.4L36 39.2 24 42.4z" fill="#33A9DC" />
+                <path
+                  d="M24 20.4H17.2L16.8 15H24V9.6H11.2l1.2 13.6H24v-2.8zM24 30.4l-6.4-1.6-.4-5.2H11.6l.8 9.2 11.6 3.2V30.4z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M24 20.4v2.8h5.6l-.8 7.2-4.8 1.2v5.6l11.6-3.2.8-9.2-1.2-4.4H24z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <span class="skill-level">Proficient</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w: 83%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-level="intermediate">
+            <div class="skill-card-glow"></div>
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="4" fill="#F7DF1E" />
+                <path
+                  d="M13 38l3.5-2.1c.7 1.2 1.3 2.2 2.7 2.2 1.4 0 2.2-.5 2.2-2.6V21h4.3v14.6c0 4.3-2.5 6.3-6.2 6.3-3.3 0-5.2-1.7-6.2-3.7M28 37.5l3.5-2c.9 1.5 2.1 2.6 4.2 2.6 1.8 0 2.9-.9 2.9-2.1 0-1.5-1.2-2-3.1-2.9l-1.1-.5c-3.1-1.3-5.1-3-5.1-6.5 0-3.2 2.5-5.7 6.3-5.7 2.7 0 4.7 1 6.1 3.4l-3.3 2.1c-.7-1.3-1.5-1.8-2.7-1.8-1.2 0-2 .8-2 1.8 0 1.3.8 1.8 2.6 2.6l1.1.5c3.6 1.5 5.6 3.1 5.6 6.7 0 3.8-3 6-7.1 6-4 0-6.5-1.9-7.8-4.6"
+                  fill="#000"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <span class="skill-level">Intermediate</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w: 65%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card learning" data-level="learning">
+            <div class="skill-card-glow"></div>
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" r="20" fill="#339933" />
+                <path
+                  d="M16.4 28.4c0 2.4 1.4 3 3.5 3 1.9 0 2.8-.9 2.8-2.1 0-1.5-1-2-2.8-2.8l-1-.4c-2.8-1.2-4.4-2.7-4.4-5.8 0-2.9 2.2-5.1 5.7-5.1 2.5 0 4.3.9 5.6 3.1l-3 1.9c-.7-1.2-1.4-1.7-2.6-1.7-1.2 0-1.9.7-1.9 1.7 0 1.2.7 1.7 2.4 2.4l1 .4c3.3 1.4 5 2.8 5 6.1 0 3.5-2.7 5.4-6.4 5.4-3.6 0-6-1.7-7.1-4.2l3.2-1.9zM30.2 28.7c.5 2.1 2 3 4 3 1.9 0 3-.8 3-2 0-1.3-.9-1.8-2.8-2.5l-.9-.4c-2.8-1.2-4.5-2.7-4.5-6 0-3 2.3-5.2 5.8-5.2 2.6 0 4.4.9 5.7 3.1l-3 1.9c-.7-1.2-1.5-1.8-2.7-1.8-1.3 0-2 .7-2 1.7 0 1.2.8 1.7 2.5 2.4l.9.4c3.3 1.4 5.1 2.8 5.1 6.1 0 3.5-2.8 5.4-6.5 5.4-3.7 0-6.1-1.7-7.2-4.2l3.6-1.9z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-name">Node.js</h3>
+            <span class="skill-level learning-badge">Learning</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w: 30%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card learning" data-level="learning">
+            <div class="skill-card-glow"></div>
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4z"
+                  fill="#E8E8E8"
+                />
+                <path
+                  d="M24 8C14.06 8 6 14.06 6 24 6 33.94 14.06 40 24 40c9.94 0 18-6.06 18-16 0-9.94-8.06-16-18-16z"
+                  fill="#3F3F3F"
+                />
+                <path
+                  d="M16 18c0-1.1.9-2 2-2h2v2h-2v8h2v2h-2c-1.1 0-2-.9-2-2v-8zM30 18c0-1.1-.9-2-2-2h-2v2h2v8h-2v2h2c1.1 0 2-.9 2-2v-8z"
+                  fill="#589636"
+                />
+                <path d="M20 22h8v4h-8z" fill="#589636" />
+              </svg>
+            </div>
+            <h3 class="skill-name">Express.js</h3>
+            <span class="skill-level learning-badge">Learning</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w: 25%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card learning" data-level="learning">
+            <div class="skill-card-glow"></div>
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 6C14 6 6 10 6 18c0 5.5 3.5 10.3 8.8 13.4L12 42l8-4c1.3.2 2.6.3 4 .3 10 0 18-4 18-12S34 6 24 6z"
+                  fill="#13AA52"
+                />
+                <path
+                  d="M16 20a2 2 0 100-4 2 2 0 000 4zM24 20a2 2 0 100-4 2 2 0 000 4zM32 20a2 2 0 100-4 2 2 0 000 4z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-name">MongoDB</h3>
+            <span class="skill-level learning-badge">Learning</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--w: 20%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-footer">
+          <div class="skills-note">
+            <span class="note-icon">⚡</span>
+            <span
+              >Also exploring: Git, REST APIs, Linux CLI, VS Code wizardry</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="section-container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>03 / Projects</span>
+        </div>
+        <h2 class="section-title">
+          What I've <span class="accent-gold">Built</span>
+        </h2>
+        <p class="section-sub">Real things. Real code. Real learning.</p>
+
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">💳</div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevObaid-Afk"
+                  class="icon-link"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Demo">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ATM UI Simulation</h3>
+              <p class="project-desc">
+                A fully functional ATM interface simulation built with vanilla
+                JavaScript. Features PIN authentication, balance checking,
+                withdrawals, deposits — complete with UI state management and
+                transaction logic.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+            </div>
+            <div class="project-badge">Featured</div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">👩🏻‍🏫</div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevObaid-Afk"
+                  class="icon-link"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Demo">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Online Exam/Test platform</h3>
+              <p class="project-desc">
+                ExamAster is a Online test/exam taking platfrom buitl to take
+                and give tests efficentially without any difficulty it is mainly
+                built using HTML, CSS JAVASCRIPT, NODE.JS and MONGODB. ExamAster
+                is built in a way that teachers can take fully control
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="https://devobaid-afk.github.io/ExamAster/"
+                class="btn btn-sm btn-primary"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/DevObaid-Afk/ExamAster"
+                class="btn btn-sm btn-ghost"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">📝</div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevObaid-Afk"
+                  class="icon-link"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Demo">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Notepad App</h3>
+              <p class="project-desc">
+                A clean, minimal notepad application with local storage
+                persistence. Real-time text editing, auto-save functionality,
+                and a distraction-free writing environment designed from
+                scratch.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JS</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card upcoming">
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">🔧</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">REST API — Coming Soon</h3>
+              <p class="project-desc">
+                First full backend project in the works. A RESTful API built
+                with Node.js + Express + MongoDB. Authentication, CRUD
+                operations, middleware — the real stuff.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag upcoming-tag">Node.js</span>
+                <span class="tech-tag upcoming-tag">Express</span>
+                <span class="tech-tag upcoming-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span class="coming-soon-badge">In Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="journey" id="journey">
+      <div class="section-container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>04 / Journey</span>
+        </div>
+        <h2 class="section-title">
+          The <span class="accent-green">Dev Log</span>
+        </h2>
+        <p class="section-sub">How I got here. Where I'm going.</p>
+
+        <div class="devlog">
+          <div class="devlog-entry" data-aos="fade-up">
+            <div class="devlog-meta">
+              <span class="devlog-version">v0.1</span>
+              <span class="devlog-date">2022</span>
+            </div>
+            <div class="devlog-content">
+              <div class="devlog-header">
+                <span class="devlog-status status-done">INIT</span>
+                <h3>First contact with HTML</h3>
+              </div>
+              <p>
+                Typed my first <code>&lt;h1&gt;</code> tag. Realized the
+                internet was just text with instructions. Got curious. Stayed
+                curious.
+              </p>
+            </div>
+          </div>
+
+          <div class="devlog-entry" data-aos="fade-up">
+            <div class="devlog-meta">
+              <span class="devlog-version">v0.5</span>
+              <span class="devlog-date">2023</span>
+            </div>
+            <div class="devlog-content">
+              <div class="devlog-header">
+                <span class="devlog-status status-done">BUILD</span>
+                <h3>HTML + CSS mastery begins</h3>
+              </div>
+              <p>
+                Started building real layouts. Learned flexbox, grid,
+                responsiveness. Realized design is a language too — and I wanted
+                to speak both.
+              </p>
+            </div>
+          </div>
+
+          <div class="devlog-entry" data-aos="fade-up">
+            <div class="devlog-meta">
+              <span class="devlog-version">v1.0</span>
+              <span class="devlog-date">2024</span>
+            </div>
+            <div class="devlog-content">
+              <div class="devlog-header">
+                <span class="devlog-status status-done">UNLOCK</span>
+                <h3>JavaScript — everything changes</h3>
+              </div>
+              <p>
+                JavaScript made things alive. Built ATM simulator and Notepad
+                app. Understood event loops, DOM, state. The logic clicked.
+              </p>
+            </div>
+          </div>
+
+          <div class="devlog-entry active" data-aos="fade-up">
+            <div class="devlog-meta">
+              <span class="devlog-version">v2.0</span>
+              <span class="devlog-date">2025</span>
+            </div>
+            <div class="devlog-content">
+              <div class="devlog-header">
+                <span class="devlog-status status-active">ACTIVE</span>
+                <h3>Going backend. Building systems.</h3>
+              </div>
+              <p>
+                Learning Node.js, Express, MongoDB. Thinking about servers,
+                databases, authentication. The real architecture. Also working
+                on social confidence and communication — because code alone
+                won't change the world.
+              </p>
+            </div>
+          </div>
+
+          <div class="devlog-entry upcoming-entry" data-aos="fade-up">
+            <div class="devlog-meta">
+              <span class="devlog-version">v∞</span>
+              <span class="devlog-date">Future</span>
+            </div>
+            <div class="devlog-content">
+              <div class="devlog-header">
+                <span class="devlog-status status-upcoming">PLANNED</span>
+                <h3>Launch. Scale. Own.</h3>
+              </div>
+              <p>
+                Build a product. Find users. Make money. Hire people. Repeat.
+                The blueprint is simple. The execution is everything.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mindset-cards">
+          <div class="mindset-card">
+            <span class="mindset-icon">🧠</span>
+            <h4>Self-Learner</h4>
+            <p>
+              No CS degree required. The internet is my university and
+              consistency is the curriculum.
+            </p>
+          </div>
+          <div class="mindset-card">
+            <span class="mindset-icon">💬</span>
+            <h4>Social Growth</h4>
+            <p>
+              Working on communication, confidence, and connecting with the
+              right people. Soft skills are code too.
+            </p>
+          </div>
+          <div class="mindset-card">
+            <span class="mindset-icon">🚀</span>
+            <h4>Entrepreneur First</h4>
+            <p>
+              I write code to build businesses — not just to pass interviews.
+              Every project is a potential product.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>05 / Contact</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-left">
+            <h2 class="section-title">
+              Let's build<br /><span class="accent-green">something</span
+              ><br />powerful.
+            </h2>
+            <p class="contact-sub">
+              Whether it's a collab, a project, feedback on my work, or just a
+              conversation about tech and ambition — I'm open.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:obaid@example.com" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-value">obaid@example.com</span>
+                </div>
+              </a>
+              <a href="https://github.com" target="_blank" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">github.com/obaid</span>
+                </div>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="contact-link"
+              >
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">linkedin.com/in/obaid</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <div class="contact-form-card">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Your name"
+                  id="formName"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  id="formEmail"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-input form-textarea"
+                  placeholder="What's on your mind?"
+                  id="formMsg"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary btn-full" id="sendBtn">
+                <span>Send Message</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+              <p class="form-note" id="formNote"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">OBD</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">
+          Designed & built by Obaid · Mumbai, India · 2025
+        </p>
+        <p class="footer-quote">
+          "The best time to start was yesterday. The second best time is now."
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
